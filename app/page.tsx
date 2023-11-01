@@ -66,7 +66,7 @@ export default function Home (): ReactElement {
           </Redirect>
         </Section>
         <Section title="Resume">
-          <Redirect href="/resume" isLast={true} title="Website" target="_blank" linkText="Show more...">
+          <Redirect href="/resume" isLast={true} title="Website" linkText="Show more...">
             <Paragraph isLast={false}>
               Show my resume on this website
             </Paragraph>
