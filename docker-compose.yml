@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  node:
+    image: node:latest
+    container_name: 'app_node'
+    restart: 'always'
+    volumes:
+      - '.:/var/www'
+    command: 'bin/bash -c "cd /var/www && npm install && npm run dev"'
+    ports:
+      - '3000:3000'
