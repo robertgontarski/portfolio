@@ -3,6 +3,7 @@
 import './globals.css'
 import React, { type ReactNode } from 'react'
 import { useTheme } from '@/components/hooks/useTheme'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function RootLayout ({
   children
@@ -15,6 +16,7 @@ export default function RootLayout ({
       <div className="max-w-2xl mx-auto my-16 md:my-28 px-4">
         {children}
       </div>
+      <Analytics />
       </body>
     </html>
   )
